@@ -227,7 +227,7 @@ ResinElement.font = Font.boldSystemFont(ThemeConfig.textSize)
     resinDiscountText = "周本："
     resinDiscountTipText = `${await getTime(recoverWeekTime)}(${await getClock(recoverWeekTime)})`
   }
-  let ResinDiscountTextElement = resinDiscountStack.addText(resinDiscountText + `${resin.remain_resin_discount_num} / ${resin.resin_discount_num_limit}`)
+  let ResinDiscountTextElement = resinDiscountStack.addText(resinDiscountText + `${3-resin.remain_resin_discount_num} / ${resin.resin_discount_num_limit}`)
   ResinDiscountTextElement.textColor = Color.dynamic(Color.white(), new Color('#FFFFFF',0.7))
   ResinDiscountTextElement.textOpacity = 1
   ResinDiscountTextElement.font = Font.mediumSystemFont(ThemeConfig.textSize)
